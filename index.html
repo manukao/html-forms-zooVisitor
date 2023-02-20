@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>HTML Zoo Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section aria-label="contact">
+      <h2 id="form-heading">Zoo Visitor Sign Up</h2>
+      <p id="form-description">
+        Please provide all necessary information on your stay with us.
+      </p>
+
+      <form aria-labelledby="form-heading" aria-describedby="form-description">
+        <fieldset>
+          <legend>Enter your information</legend>
+
+          <!-- Email: label & input -->
+          <label for="mail">Your E-Mail:</label>
+          <input id="mail" name="mail" type="email" />
+          <label for="date">Your estimated date of visit:</label>
+          <input id="date" name="date" type="date" />
+          <!-- Date: label & input -->
+
+          <fieldset class="radio-options">
+            <legend>Which one of these animals would you like to visit?</legend>
+            <label for="sloths">Relaxed sloths</label>
+            <input
+              type="radio"
+              id="sloths"
+              name="animal-preference"
+              value="sloths"
+            />
+            <label for="kangaroos">Jumpy kangaroos</label>
+            <input
+              type="radio"
+              id="kangaroos"
+              name="animal-preference"
+              value="kangaroos"
+            />
+            <label for="racoons">Thieving racoons</label>
+            <input
+              type="radio"
+              id="racoons"
+              name="animal-preference"
+              value="racoons"
+            />
+            <!-- Radio Buttons: labels & inputs -->
+          </fieldset>
+
+          <!-- Textarea: label & input -->
+          <label for="concern">Any concerns?</label>
+          <textarea id="concern" rows="7"></textarea>
+          <!-- Two Checkboxes: labels & inputs -->
+          <label for="data"
+            >I accept the processing of my data <input type="checkbox" id="data"
+            name="questions" value="data" required
+          </label>
+          <label for="newsletter"
+            >I want to sign up for the newsletter <input type="checkbox"
+            id="newsletter" name="questions" value="newsletter"
+          </label>
+          <!-- Two Buttons: reset & submit -->
+          <br />
+          <button type="reset" aria-label="reset-form">reset</button>
+          <button type="submit" aria-label="submit-form">submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>
